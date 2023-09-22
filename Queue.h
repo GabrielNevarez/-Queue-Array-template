@@ -13,6 +13,8 @@ class Queue {
 public:
 
     Queue();
+
+    Queue(int front, int rear, T *items, int maxQue, int numItems);
     // Default constructors
 
     explicit Queue(int max);
@@ -53,6 +55,8 @@ private:
     int maxQue;
     int numItems;
 };
+
+
 
 #include "Queue.cpp"
 
